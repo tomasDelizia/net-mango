@@ -25,4 +25,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+ApplyMigrations();
+
 app.Run();
+
+void ApplyMigrations()
+{
+    using var scope = app.Services.CreateScope();
+    var _db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    if (!_db.Database.GetPendingMigrations().Any()) return;
+    _db.Database.Migrate();
+}
