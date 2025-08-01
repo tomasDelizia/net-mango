@@ -1,4 +1,5 @@
 using CouponApi.Data;
+using Mapster;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
+builder.Services.AddMapster();
+MapsterConfig.RegisterMaps();
 
 var app = builder.Build();
 
