@@ -1,0 +1,81 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Visual Studio Code settings
+.vscode/
+
+# Rider settings
+.idea/
+
+# DotCover
+*.dotCover
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+# Uncomment if you have a packages folder in your project root
+# /packages
+
+# Visual Studio cache files
+.vs/
+# Uncomment if you have tasks.json
+# .vscode/tasks.json
+
+# IIS Express
+.vs/
+*.vspscc
+*.vssscc
+*.userprefs
+
+# ASP.NET Publish
+publish/
+*.Publish.xml
+
+# Azure Pipelines
+.azure-pipelines/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Local test results
+TestResults/
+*.trx
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# Others
+*.dbmdl
+*.pdb
+*.cache
+*.config
+*.bak
+
+# Aspire specific
+.env
+.env.*
+docker-compose.override.yml
+docker-compose.*
+*.dockerfile
